@@ -18,8 +18,6 @@ async def run_bot():
     await app_.initialize()
     await app_.start()
     print("Bot started!")
-    await app_.updater.start_polling()
-    await app_.updater.idle()
 
 # Thread wrapper
 def start_bot_thread():

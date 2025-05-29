@@ -18,6 +18,7 @@ async def run_bot():
     await app_.initialize()
     await app_.start()
     print("Bot started!")
+    await app_.idle()  # ✅ This keeps the bot running and listening
 
 # Thread wrapper
 def start_bot_thread():
